@@ -1,2 +1,2 @@
-# tushar-saini.github.io
-Public Site
+# shatur.github.io
+Personal Website

@@ -1,0 +1,118 @@
+<!-- 	This code is for shatur.github.io. Blog
+		about academic project LiveFree
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Live Free</title>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href="style-sheet.css">
+		<link rel="shortcut icon" href="Image/icon.png" />
+		<meta charset="utf-8">
+		<meta name = "viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+
+	<body>
+
+		<div class="blog-data-box middle">
+			<div class="blog-data-title">
+				Live Free
+
+			</div>
+			<div class="blog-date">
+				December'2016
+			</div>
+			<div class="blog-data-brief">
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project was done as a part of our academic curriculum. The motive of the project is to help an individual to monitor air quality around them. So, we have designed an IOT which can detect the air quality around it and logs this data to the server. Our app users can view this data on their android application. We also provide some information about the implications of logged AQI level and advises our users what action should be taken. <p>
+
+				<h3>Need of Project :</h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I live in Delhi, which is world's most polluted city. We face several problems related to it in our day to day life. So, basically, we want to design a device, which can help an individual to monitor air quality around them. This project will help people control their environments to a certain extent and increase awareness of the pollution around them. If people are more aware of the contents of the environment, they can change their routines and habits in order to be less affected by air pollution. This can help increase the quality of life and overall health of people at risk. Having the ability to monitor and record air pollution can help shape our daily activities and routines.<p>
+
+				<h3>Working :</h3><p>
+
+				<img src="Image/block_diag.png" width="100%" height="auto"><br><br>
+
+				<h2><u>Technical Details</u></h2><p>
+
+				<h3>Hardware Requirements</h3>
+
+				<ul>
+					<li>Raspberry Pi</li>
+					<li>Sensors [MQ135]</li>
+					<li>Analog to Digital Converter</li>
+				</ul>
+
+				<h3>Tech Stack Required</h3>
+
+				<ul>
+					<li>Java for app develipment</li>
+					<li>PHP for server</li>
+					<li>Python for controlling GPIO</li>
+					<li>Html, Js &amp; CSS for website</li>
+				</ul>
+
+				<h3>Why Raspberry Pi?</h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Raspberry Pi is a full fledged computer. It has a real processor, real RAM, real GPU, similar to what smartphones have these days. It comes with a separate distribution of Linux that can run on it as an OS. For our project, we have used raspbian OS, which is quite easy to use. It can run apps, play videos, listen to music on it. It outputs to a monitor and takes input from a mouse and a keyboard. It also provides GPIO pins (General Purpose Input Output) that can take inputs and give outputs, in electrical forms.<p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We used raspberry pi due to its ease of use. It contained everything which we needed for our project. The coding for controlling GPIO is done in python, which is easy to learn. Also, this was a one-time investment, and raspberry pi can be used in many other experiment projects.<p>
+
+				<h3>About Sensor [MQ135]</h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The MQ-135 is a hazardous gas sensor used for air quality control and is suitable for detecting NH3 (Ammonia), NOx, alcohol, Benzene, smoke, CO2, etc. You can see data sheet of MQ135 Sensor <a class = "nostyle" href="https://www.olimex.com/Products/Components/Sensors/SNS-MQ135/resources/SNS-MQ135.pdf">here.</a><p>
+
+				<h4>Features</h4>
+				<ul>
+					<li>Wide Detecting scope</li>
+					<li>Stable and long life</li>
+					<li>Fast response and High sensitivity</li>
+					<li>Simple drive circuit</li>
+				</ul>
+
+				<h4>Need of Analog to Digital Converter</h4><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MQ 135 sensor produces output in analog form, so there is a need to convert this analog signal to digital signal. For our project, we have used MCP3008 ADC.<p>
+
+				<h3>Circuit Diagram :</h3><p>
+
+				<img src="Image/rasp_circuit.jpeg" width="100%" height="auto">
+
+				<h3>AQI Levels :</h3><p>
+
+				<img src="Image/aqi_level.png" width="100%" height="auto">
+
+				<h3>Lets Talk About Code :</h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As the project have several components, one tech wasn't enough to make this project work. So, we have used many technologies like python for the raspberry pi coding, PHP for server side scripting, java for developing the android application, and DHTML for our website.<p>
+
+				I have tried to make the code as readable as possible. I have commentented where ever deemed necessary. But still, if you've any query please feel free to drop a message.<p>
+
+				You can fork the code from <a class="nostyle" target="_blank" href="https://github.com/shatur/LiveFree">here.</a><p>
+
+				<h3>Licensing :</h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All the code under this project is licensed under <a class="nostyle" target="_blank" href="https://www.gnu.org/licenses/gpl.html">GNU General Public License v3.0</a>. So, you are free to innovate on anything you need. Also, there are certain items like images, logos, etc which are licensed under creative commons license, so please add those attributions where ever needed.
+
+				<div class="text-center">Thanks for reading!!</div>
+			</div>
+
+			<div class="menu-options middle text-center">
+				<div class="menu-text">
+					<a class="nostyle" href="index.html">home</a>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="middle footer text-center">
+				&#169; 2016 Tushar Saini. Made In India, with &#9829;.
+			</div>
+
+		</div>
+
+	</body>
+</html>

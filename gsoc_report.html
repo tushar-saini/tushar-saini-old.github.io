@@ -1,0 +1,188 @@
+<!-- 	This code is for shatur.github.io. Blog
+		about GSoC'17 Report
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Tushar Saini (GSoC Report)</title>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href="gsoc-blog.css">
+		<link rel="shortcut icon" href="Image/icon.png" />
+		<meta name = "viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+
+	<body>
+
+		<div class="blog-data-box middle">
+			<div class="blog-data-title">
+				Google Summer Of Code' 2017 Report 
+			</div>
+			<h2>Implementing missing APIs of WebExtension.</h2>
+			<div class="blog-date">
+				August'2017
+			</div>
+			<div class="blog-data-brief">
+
+				<h3><u>Overview Of The Project:</u></h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our aim was to implement some of the missing APIs of <a target="_blank" class="nostyle" href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">WebExtension</a>. It's a cross browser system for developing add-ons. But not all APIs are supported yet on android firefox. I proposed to implement <a target="_blank" class="nostyle" href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData">browsingData</a> and <a target="_blank" class="nostyle" href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus">contextMenus</a> API. browsingData API enables extensions to clear private data. While contextMenus add items to the browser's context menu, to be displayed in the contexts you specify. But due to various difficulties faced during implementation of browsingData, I was not able to give much time to contextMenus. browisngData is almost finished and I am very proud of that. But along with it, there is a sense of disappointment that I was not able to finish contextMenus on time.<p>
+
+				<h3><u>Bugs List:</u></h3><p>
+
+				Here is the list of bugs which we worked on, during GSoC : <p>
+
+				<div class = "bd">
+			      <b><span class="table-head">browsingData API</span></b><br>
+			      <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData')">MDN DOC</button>
+			      <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1362118')">TRACKING BUG</button>
+			  
+
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>settings</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">LANDED</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/settings')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1362994')">BUG 1362994</button>
+			        </div>
+			      </div>
+
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removeCache</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">LANDED</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removeCache')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1362996')">BUG 1362996</button>
+			        </div>
+			      </div>
+
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removeCookies</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">LANDED</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removeCookies')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1362998')">BUG 1362998</button>
+			        </div>
+			      </div>
+
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removeDownloads</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">LANDED</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removeDownloads')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1363001')">BUG 1363001</button>
+			        </div>
+			      </div>
+
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removeFormData</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">LANDED</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removeFormData')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1363004')">BUG 1363004</button>
+			        </div>
+			      </div>
+
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removeHistory</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">WORK IN PROGRESS</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removeHistory')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1363010')">BUG 1363010</button>
+			        </div>
+			      </div>
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removePasswords</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">BLOCKED</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removePasswords')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1363012')">BUG 1363012</button>
+			        </div>
+			      </div>
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>removePluginData</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">WON'T FIX</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/removePluginData')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1363013')">BUG 1363013</button>
+			        </div>
+			      </div>
+			      <div class = "box">
+			        <div class="left-side">
+			          <p>remove</p>
+			        </div>
+			        <div class="RIGHT-side">
+			          <button class = "bd-btn">IN REVIEW</button>
+			          <button class = "bd-btn" onclick="window.open('https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browsingData/remove')">MDN DOC</button>
+			          <button class = "bd-btn" onclick="window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=1363014')">BUG 1363014</button>
+			        </div>
+			      </div>
+			    </div>
+
+				<h3><u>How I Progressed &amp; Difficulties Faced:</u></h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prior to working on this project, I solved some good first bugs of Web-Extension, that helped me a lot in understanding how things work and making a good proposal. I started with the implementation of settings method of browsingData API. It enables add-ons to get user preferences for clearing browsing data. On android, we've two sets of preferences, one is gecko preferences, which can be accessed/edited from "about: config" and another one which is stored in android SharedPreferences. Settings returns the second one. At that time there was no such method to get these preferences, so I updated the Java side code to obtain these values for our implementation. After its implementation, the second task was to wrote the test for it. We wrote <a target="_blank" class="nostyle" href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Mochitest">chrome mochitest</a>.  I was having a hard time running these tests locally, but with the help from Gbrown and other community members, I was able to make it work. While testing I learned how to use <a target="_blank" class="nostyle" href="https://developer.mozilla.org/en-US/docs/Tools/WebIDE">WebIDE</a> to debug our tests. It really made the task easier.<p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;After implementing settings method, I started with the removeHistory method. This bug really slowed us down. Grisha helped me a lot to solve this issue. His elaborate comments really made the task easier to understand what and how things needed to be done. Prior to our implementation, we didn't support the removal of history items with since parameter. The problem was, for firefox android we have two tables: history and visits. For every item in the history table, there can be many visits associated with it and if the user has synced the device with other devices, there can be local as well as remote visits. These classifications were done to rank sites to show in top sites panel. So, if we want to delete history, first we needed to filter the history_guids where last_date > since. Then delete visits from visits table for these history_guids and where date > since. Then retrieve data from visits table about how many visits remains, ie, total count, remote count local count, local date, remote date, etc for a particular history_guid and then update entries in the history table. Then delete those history items for which there are no visits left, ie, orphaned history items. For more details, you can read comments on <a target="_blank" class="nostyle" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1363010#c14">Bug 1363010</a>. But finally, it's almost finished\o/ I am currently testing if all the above things are happening as expected.<p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;When I got blocked on removeHistory method, I started working on other methods. These didn't create many problems and were quite easily implemented.<p>
+
+				<h3><u>Special Thanks to:</u></h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I would like to thank my mentor <a target="_blank" class="nostyle" href="https://mozillians.org/en-US/u/sebastian.kaspari/">Sebastian Kaspari</a> for all of his efforts.  He is really a great mentor one can ask for. It would not be possible to complete this project if not for Sebastian's guidance. He helped me solve various issues during this program. I am really grateful to him for giving me this opportunity. I have learned a lot of things during this program. Also, I want to extend my regards to all the members/contributors of Mozilla who helped me solve issues at some point and reviewed my patches.<br>
+
+				<h3><u>Experience:</u></h3><p> 
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These three months were really amazing. I learned various new things. I got my hands on various tools. The whole experience was really awesome. It really feels great when my patches lands.
+
+				<h3><u>Future Work:</u></h3><p>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am really disappointed, that I am not able to deliver what I proposed. So, I intend to finish contextMenus API. But implementing contextMenus, will not be all, I love contributing to Mozilla. I intend to become a core contributor, so I will be sticking around a lot. It has been nearly two years since I started contributing to Mozilla. I really like people here. They are really humble and friendly. I have learned a lot while contributing to Mozilla. Thanks for everything!<br>
+
+
+				<h3><u>Useful Links:</u></h3><p>
+
+				<ul class = "anchor-style">
+					<li><a target="_blank" class = "nostyle" href="https://summerofcode.withgoogle.com/projects/#6268554627252224">GSoC Project Link</a></li>
+					<li><a target="_blank" class = "nostyle" href="https://bugzilla.mozilla.org/user_profile?user_id=556600">Bugzilla Profile</a></li>
+					<li><a target="_blank" class = "nostyle" href="https://drive.google.com/open?id=0B-8sYbIWtTHwb2lGTmxWUzJFbVU">Project Proposal</a></li>
+				</ul>
+
+
+
+				<div class="text-center quote-style">"Once a Mozillian, always a Mozillian!"</div>
+			</div>
+
+			<div class="menu-options middle text-center">
+				<div class="menu-text">
+					<a class="nostyle" href="index.html">home</a>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="middle footer text-center">
+				&#169; 2016 Tushar Saini. Made In India, with &#9829;.
+			</div>
+
+		</div>
+
+	</body>
+</html>
